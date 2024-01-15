@@ -1,18 +1,9 @@
-#'SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?'
-# 'univ' = 'university'
-# 99 = 71
-
-# case - sensitive
-abc = 7
-Abc = 8
-ABC = 9
-print(abc,Abc,ABC)
-
-test9 = 77
-_test9 = 77
-
-aritists = ['bts','뉴진스','핑클','SES','HOT','블랙핑크']
-group = aritists
-print(aritists, group)
-aritists[2] = '세븐틴'
-print(aritists, group)
+base_number = int(input('input base number :'))
+exponent_number = int(input('input exponent number :'))
+print(f'base {base_number}, exponent {exponent_number}, 결과 값은{base_number**exponent_number}')
+# money = 5,000,000 # 쉼표는 튜플로 동작한다.
+# print(money)
+# print(type(money)) # tuple
+# cash = 5_000_000
+# print(cash, type(cash))
+#
