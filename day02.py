@@ -1,8 +1,4 @@
-dec = 65
-octal = 0o101
-hexadecimal = 0x41
-binary = 0b01000001
-print(dec, octal, hexadecimal, binary)
-print(chr(dec), chr(octal), chr(hexadecimal), chr(binary))
-print(bin(dec), bin(octal), bin(hexadecimal), bin(binary))
-print(ord('B'), ord('Z'), ord('a'), ord('2'))
+# (32°F − 32) × 5/9 = 0°C
+fahrenheit = float(input('Enter temperature in Fahrenheit:'))
+print(f'fahrenheit : {fahrenheit}F, Celsius : {round(((fahrenheit-32.0) *5.0/9.0),2)}C')
+print(f'fahrenheit : {fahrenheit}F, Celsius : {((fahrenheit-32.0) *5.0/9.0):.2f}C')
