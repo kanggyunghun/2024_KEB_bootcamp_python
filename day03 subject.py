@@ -15,11 +15,11 @@ while menu !='5':
     elif menu == '3':
         num = int(input('Enter number: '))
         i = 2
+
         if num < 2:
             pass
 
         while i < num:
-            is_prime = True
             if num % i == 0:
                 is_prime = False
                 break
@@ -39,7 +39,6 @@ while menu !='5':
             n1, n2 = n2, n1
 
         for num in range(n1, n2+1):
-            is_prime = True
             if num < 2:
                 pass
 
