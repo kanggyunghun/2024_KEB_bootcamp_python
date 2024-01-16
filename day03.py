@@ -1,19 +1,24 @@
 # prime number 2
-number = int(input('enter number :'))
-is_prime = True
+from numpy import number
 
-if number < 2:
-    print(f'{number}는 prime number가 아닙니다.')
-else:
-    for i in range(2, number):
-        if number % i == 0:
-            is_prime = False
-            break
-        i += 1
+numbers = input('enter number :').split()
+n1 = int(numbers[0])
+n2 = int(numbers[1])
 
-    if is_prime:
-        print(f'{number}는 prime number 입니다')
+if n1 > n2:
+    n1, n2 = n2, n1
+
+for number in range(n1, n2 + 1):
+    is_prime = True
+
+    if number < 2:
+        pass
     else:
-        print(f'{number}는 prime number가 아닙니다.')
+        for i in range(2, number):
+            if number % i == 0:
+                is_prime = False
+                break
+        if is_prime: print(number, end=' ')
+
 
 
