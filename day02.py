@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # (32°F − 32) × 5/9 = 0°C
 # (0°C × 9/5) + 32 = 32°F
 # fahrenheit = float(input('Enter temperature in Fahrenheit:'))
