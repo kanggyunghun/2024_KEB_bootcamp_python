@@ -1,20 +1,20 @@
-# prime number 2
-number = int(input('enter number :'))
-is_prime = True
-i = 2
+univ = "inha"
+# i = 0
+# while i < len(univ):
+#     print(univ[i])
+#     i += 1
 
-if number < 2:
-    print(f'{number}는 prime number가 아닙니다.')
-else:
-    while i < number:
-        if number % i == 0:
-            is_prime = False
-            break
-        i += 1
+for letter in univ:
+    print(letter, end='')
 
-    if is_prime:
-        print(f'{number}는 prime number 입니다')
-    else:
-        print(f'{number}는 prime number가 아닙니다.')
+print()
 
+for k in range(0,len(univ)):
+    print(univ[k], end = '')
 
+print()
+
+for letter in univ:
+    if letter == 'h':
+        break
+    print(letter, end='')
