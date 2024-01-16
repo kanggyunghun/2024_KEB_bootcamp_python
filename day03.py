@@ -1,16 +1,17 @@
-# subjects = {'python': 'kim', 'c++':'sung', 'data structure': 'kim', 'database': 'kang'}
-# print("{0[python]} {0[data structure]}".format(subjects))
+# prime number
 
-#prime number
-number = int(input('Input number :'))
-cnt = 0
-i = 1
+number = int(input('enter number :'))
+count = 0
+i = 2
+
 while i <= number:
-    if number % i ==0:
-        cnt = cnt + 1
+    if number % i == 0:
+        count = count + 1
+        break
     i = i + 1
-if cnt == 2:
-    print(f'{number} is prime number')
+
+if count == 0:
+    print(f'{number}는 prime number 입니다')
 else:
-    print(f'{number} is not prime number')
+    print(f'{number}는 prime number가 아닙니다.')
 
