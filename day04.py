@@ -6,7 +6,6 @@ drinks_food.update(japan_drinks_food)
 drinks_foods_keys = list(drinks_food)
 print(drinks_foods_keys)
 
-
 while True:
     menu = input(f'다음 술중에 고르시오\n1){drinks_foods_keys[0]}, 2){drinks_foods_keys[1]}, 3){drinks_foods_keys[2]}, 4){drinks_foods_keys[3]} 5)random 6)quit :')
     if menu == '1':
