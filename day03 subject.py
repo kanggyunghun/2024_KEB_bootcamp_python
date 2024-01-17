@@ -17,7 +17,7 @@ while menu !='5':
         i = 2
 
         if num < 2:
-            pass
+            continue
 
         while i < num:
             if num % i == 0:
@@ -39,15 +39,16 @@ while menu !='5':
             n1, n2 = n2, n1
 
         for num in range(n1, n2+1):
+            is_prime = True
             if num < 2:
-                pass
+                continue # pass
 
             for i in range(2,num):
                 if num % i == 0:
                     is_prime = False
                     break
-                else:
-                    is_prime = True
+                #else:
+                    #is_prime = True / 이렇게 하면 is_prime 정의 안됨.
 
             if is_prime:
                 print(f'{num}', end = " ")
