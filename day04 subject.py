@@ -33,5 +33,5 @@ print(life['animals'].keys())
 print(life['animals']['cats'])
 
 # 8.10
-squares = {index*index:value for index, value in enumerate(range(10))}
+squares = {index:pow(value,2) for index, value in enumerate(range(10))}
 print(squares)
