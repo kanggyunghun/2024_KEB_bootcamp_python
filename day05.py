@@ -14,18 +14,35 @@ def is_prime(num) -> bool: # help() 와 같이 사용
             i += 1
         return True
 
+menu = ''
 
-numbers = input('enter number :').split()
-n1 = int(numbers[0])
-n2 = int(numbers[1])
+while menu !='5':
+    menu = input('\n1) Fahrenheit-> Celsius \n2) Celsius -> Fahrenheit \n3) Detect prime number \n4) Detect prime number between \n5) END'
+                   '\nEnter number : ')
 
-if n1 > n2:
-    n1, n2 = n2, n1
+    if menu == '1':
+        fahrenheit = int(input('Enter temperature in Fahrenheit:'))
+        print(f'Fahrenheit : {fahrenheit}F, Celsius : {((fahrenheit - 32.0) * 5.0 / 9.0):.4f}C')
 
-for number in range(n1, n2 + 1):
-    if is_prime(number):
-        print(number, end=' ')
+    elif menu == '2':
+        celsius = int(input('Enter temperature in Celsius:'))
+        print(f'celsius : {celsius}F, Celsius : {((celsius * 9.0 / 5.0) + 32.0):.4f}F')
 
+    elif menu == '3':
+        num = int(input('Enter number: '))
+        if is_prime(num):
+            print(f'{num} is a prime number')
+        else:
+            print(f'{num} is not a prime number')
 
+    elif menu == '4':
+        num = input('Enter two numbers: ').split()
+        n1 = int(num[0])
+        n2 = int(num[1])
+        if n1 > n2:
+            n1, n2 = n2, n1
 
+        for num in range(n1, n2+1):
+            if is_prime(num):
+                print(num, end =' ')
 
