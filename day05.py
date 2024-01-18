@@ -1,14 +1,13 @@
-n1, n2 = map(int,input('enter number :').split().sort())
-n1, n2 = min(n1, n2), max(n1, n2)
+def my_range(first=0, last=10, step=1):
+    number = first
+    while number < last:
+        yield number
+        number += step
 
-for number in range(n1, n2 + 1):
-    is_prime = True
+my_list = my_range(1,5)
 
-    if number < 2:
-        pass
-    else:
-        for i in range(2, number):
-            if number % i == 0:
-                is_prime = False
-                break
-        if is_prime: print(number, end=' ')
+for i in my_list:
+    print(i)
+
+for j in my_list:
+    print(j)
