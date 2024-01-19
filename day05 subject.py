@@ -1,7 +1,9 @@
 # 9.1
 def good():
-    list_a = ['Harry', 'Ron', 'Hermione']
-    print(list_a)
+    harry_porter = input().split()
+    return harry_porter
+
+print(good())
 
 # 9.2
 def get_odds(start=1, end=10, step=2):
