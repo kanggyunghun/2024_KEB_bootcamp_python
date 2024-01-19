@@ -1,26 +1,24 @@
-class Pokemon:
-    def __init__(self, name):
-        self.name = name
+class Animal:
+    def says(self):
+        return 'I speak'
 
-    def attack(self, target):
-        print(f'{self.name}이(가) {target.name}을(를) 공격!')
+class Horse(Animal):
+    def says(self):
+        return 'Neigh'
 
 
-class Pikachu(Pokemon):
-    def __init__(self, name, type):
-        super().__init__(name) # 부모 클래스의 init 실행
-        self.type =type
-    def attack(self, target):
-        print(f'{self.name}이(가) {target.name}을(를) {self.type} 공격!')
+class Donkey(Animal):
+    pass
+    # def says(self):
+    #     return 'Hee haw'
 
-    def electric_info(self):
-        print('전기계열의 공격')
-
-class Squirtl(Pokemon):
+class Mule(Donkey, Horse):
     pass
 
-p1 = Pikachu('피카츄', '전기')
-p2 = Squirtl('꼬부기')
-p1.attack(p2)
-p2.attack(p1)
-p1.electric_info()
+class Hinny(Horse, Donkey):
+    pass
+
+m1 = Mule()
+
+print(m1.says())
+print(Hinny.__mro__)
